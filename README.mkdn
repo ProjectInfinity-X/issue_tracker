@@ -1,0 +1,253 @@
+# Project Infinity X --- ROM Source Issues Tracker
+
+This is the **Project Infinity X's** issue_tracker repository.
+
+This repository is intended for reporting **bugs related to the
+original, unmodified Project Infinity X ROM source**. Please read the
+guidelines below carefully before opening an issue.
+
+------------------------------------------------------------------------
+
+## Scope of This Repository
+
+This tracker is intended **only for ROM source-related bugs**.
+
+Examples of issues that may be appropriate:
+
+-   SystemUI or user-interface bugs originating from the ROM source
+-   Core ROM functionality issues
+-   Launcher issues caused by the ROM source
+-   Bugs in built-in applications
+-   Other reproducible issues affecting the original Infinity X source
+
+The issue must be reproducible or reasonably traceable to the ROM
+source. Device-specific problems are outside the scope of this tracker.
+
+------------------------------------------------------------------------
+
+## Issues That Must Not Be Reported Here
+
+Please do **not** open issues for:
+
+-   Device-specific problems
+-   Device tree issues
+-   Kernel issues
+-   Vendor blobs or firmware issues
+-   Device bring-up or hardware-specific problems
+-   Issues caused by unsupported modifications
+-   Third-party application compatibility issues, such as banking or
+    payment applications
+-   Device update requests
+-   Requests to add a new device to the supported device list
+-   General ROM questions or queries
+-   General user support or troubleshooting requests
+
+For device-specific issues, please use the relevant device support group
+or support channel.
+
+------------------------------------------------------------------------
+
+## Stock State Requirement
+
+All reports must be submitted while using the ROM in its **stock
+state**.
+
+Before reporting, make sure that you have not applied or installed:
+
+-   Root modifications
+-   External root modules
+-   Unsupported system modifications
+-   Other changes that alter the original ROM environment
+
+If an issue is found to be caused by user-applied modifications, the
+report will be closed. Further action may be taken in accordance with
+the project's contribution and moderation policies.
+
+------------------------------------------------------------------------
+
+## Reproduction Policy
+
+The lead maintainer will attempt to reproduce the issue using the steps
+provided in the report.
+
+Please ensure that your reproduction steps are:
+
+1.  Clear
+2.  Accurate
+3.  Complete
+4.  Repeatable whenever possible
+
+If the issue cannot be reproduced using the provided steps, the report
+may be closed with reproduction results or supporting evidence.
+
+A report may also be closed if it is incomplete, unsupported,
+device-specific, unrelated to the ROM source, or does not follow the
+reporting requirements.
+
+------------------------------------------------------------------------
+
+## Before Opening an Issue
+
+Please complete the following checklist:
+
+-   [ ] Confirm that the issue is related to the Infinity X ROM source.
+-   [ ] Confirm that the issue is not device-specific.
+-   [ ] Search existing issues to ensure that the report is not a
+    duplicate.
+-   [ ] Use the ROM in its stock state.
+-   [ ] Remove external root modifications and modules before testing.
+-   [ ] Prepare accurate reproduction steps.
+-   [ ] Collect relevant logs.
+-   [ ] Include screenshots or videos when they help demonstrate the
+    issue.
+
+------------------------------------------------------------------------
+
+## Information Required in a Bug Report
+
+The issue form asks for the following information.
+
+### Device Model
+
+Provide your device model and codename.
+
+This information is collected for reproduction context. It does not mean
+that device-specific issues are accepted by this tracker.
+
+### ROM Version
+
+Select the Infinity X version being used:
+
+-   Infinity X 4.x --- Android 17
+-   Infinity X 3.x --- Android 16
+
+### ROM Version Details
+
+Enter the complete ROM version along with the exact build date.
+
+Example:
+
+``` text
+Infinity X v3.12 - 02/08/2026
+```
+
+### Bug Description
+
+Explain the issue clearly and include:
+
+-   What happened
+-   What you expected to happen
+-   How the issue affects the ROM
+-   Any relevant context
+
+### Steps to Reproduce
+
+Provide precise steps that allow the lead maintainer to reproduce the
+issue.
+
+Example:
+
+``` text
+1. Open Settings.
+2. Navigate to the relevant section.
+3. Change the specified option.
+4. Observe the issue.
+
+Expected behavior:
+Describe what should happen.
+
+Actual behavior:
+Describe what actually happens.
+```
+
+### Logs
+
+Attach relevant logs whenever applicable.
+
+Examples include:
+
+-   Logcat
+-   Dmesg
+-   Framework logs
+-   Relevant system component logs
+
+Please redact sensitive information, including:
+
+-   Personal information
+-   Phone numbers
+-   Authentication tokens
+-   Other private data
+
+Reports without relevant evidence may be closed when the available
+information is insufficient for investigation.
+
+### Screenshots and Videos
+
+Attach screenshots or screen recordings when they help demonstrate the
+issue.
+
+Explain what the attached media shows when necessary.
+
+### Possible Fix or Suggestion
+
+If you have an idea about the cause or a potential fix, you may include:
+
+-   Possible cause
+-   Suggested fix
+-   Relevant source file
+-   Relevant patch or commit
+
+This section is optional, but technically useful suggestions are
+welcome.
+
+### Additional Information
+
+Include any additional context that may help with diagnosis, such as:
+
+-   Related issues
+-   Relevant patches
+-   Additional reproduction details
+-   Other useful information
+
+------------------------------------------------------------------------
+
+## Issue Handling
+
+Issues are reviewed based on:
+
+-   Whether they fall within the scope of this tracker
+-   Whether the report follows the requirements
+-   Whether the issue can be reproduced
+-   Whether the issue is related to the original Infinity X ROM source
+-   Whether sufficient information and evidence have been provided
+
+Issues that do not meet the requirements may be closed.
+
+Please do not use this tracker for general support, device-specific
+troubleshooting, feature requests, or unrelated questions.
+
+------------------------------------------------------------------------
+
+## Contribution Standards
+
+When submitting a report:
+
+-   Be accurate and honest.
+-   Do not intentionally misrepresent the cause of an issue.
+-   Do not submit duplicate reports.
+-   Do not include private or sensitive information in logs.
+-   Follow the issue form and provide complete details.
+-   Keep discussions relevant to the reported issue.
+
+Repeated abuse, deliberate misrepresentation, or continued submission of
+unsupported reports may result in moderation action according to project
+policy.
+
+------------------------------------------------------------------------
+
+## Thank You
+
+Thank you for helping improve **Project Infinity X**.
+
+Your detailed reports, accurate reproduction steps, and relevant logs
+help make the project more stable and reliable.

@@ -1,0 +1,196 @@
+
+name: Infinity X Bug Report
+description: Report an issue related to Project Infinity X ROM source.
+assignees:
+  - tejas101k
+labels:
+  - "bug"
+  - "unresolved"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Project Infinity X - ROM Source Bug Report
+
+        Thank you for helping improve Project Infinity X.
+
+        ⚠️ IMPORTANT — READ BEFORE SUBMITTING
+
+        This issue form is ONLY for bugs related to
+        the original, unmodified Infinity X ROM source.
+
+        DO NOT report:
+
+        - Device-specific issues
+        - Device tree issues
+        - Kernel issues
+        - Vendor blobs or firmware issues
+        - Device bring-up or hardware-specific issues
+        - Issues caused by unsupported modifications
+        - Third-party app compatibility issues
+          (e.g. banking apps, payment apps, etc.)
+
+        DO NOT:
+
+        - Report issues while external root modifications
+          or modules are installed.
+        - Request updates for your device.
+        - Request new devices to be added to the
+          supported device list.
+        - Post general ROM queries.
+        - Seek general user support or troubleshooting.
+
+        Violations of the above guidelines will result
+        in immediate closure of the issue.
+
+        Device-specific issues will not be entertained.
+        Please use the relevant device support groups
+        for device-specific assistance.
+
+        STOCK STATE REQUIREMENT:
+
+        Report issues ONLY while using the ROM in its
+        stock state, without root modifications,
+        external modules, or unsupported changes.
+
+        If the issue is found to be caused by user-applied
+        modifications, the report will be closed and
+        further action may be taken in accordance
+        with the project's contribution policies.
+
+        REPRODUCTION POLICY:
+
+        Lead will attempt to reproduce the issue
+        using the steps provided in this report.
+
+        If the issue cannot be reproduced using the
+        provided steps, the report will be closed with
+        reproduction results or supporting evidence.
+
+        Please provide complete information, accurate
+        reproduction steps, and relevant logs.
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Acknowledgement
+      description: You must confirm all of the following before submitting.
+      options:
+        - label: I confirm that this issue is related to the Infinity X ROM source and is not device-specific.
+          required: true
+        - label: I have searched existing issues and confirmed that this is not a duplicate.
+          required: true
+        - label: I have not performed any root modifications or installed external modules.
+          required: true
+        - label: I understand that the issue may be closed if it cannot be reproduced using the steps I provided.
+          required: true
+        - label: I understand that incomplete, unsupported, or device-specific reports may be closed.
+          required: true
+
+  - type: input
+    id: device_model
+    attributes:
+      label: Device Model
+      description: Enter your device model and codename. This is for reproduction context only.
+      placeholder: "Example: Device Model (Codename)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rom_version
+    attributes:
+      label: ROM Version
+      description: Select the Infinity X version you are using.
+      options:
+        - Infinity X 4.x (Android 17)
+        - Infinity X 3.x (Android 16)
+    validations:
+      required: true
+
+  - type: input
+    id: build_number
+    attributes:
+      label: ROM Version Details
+      description: Enter the complete ROM version along with the exact build date.
+      placeholder: "Example: Infinity X v3.12 - 02/08/2026"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: Clearly explain the issue and its impact.
+      placeholder: |
+        Describe the issue in detail.
+
+        What happened?
+        What did you expect to happen?
+        How does this affect the ROM?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide clear and accurate steps that allow lead to reproduce the issue.
+      placeholder: |
+        1. Open ...
+        2. Navigate to ...
+        3. Perform ...
+        4. Observe ...
+
+        Expected behavior:
+        Actual behavior:
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Upload relevant logs using drag and drop or paste links.
+
+        Include logcat, dmesg, or relevant framework logs
+        where applicable.
+
+  - type: textarea
+    id: screenshots_videos
+    attributes:
+      label: Screenshots / Videos
+      description: Attach screenshots or screen recordings if they help demonstrate the issue.
+      placeholder: |
+        Drag and drop screenshots or videos here.
+
+        Explain what the media demonstrates (optional).
+
+  - type: textarea
+    id: possible_fix
+    attributes:
+      label: Possible Fix / Suggestion
+      description: |
+        If you have an idea about the cause or a potential fix,
+        describe it here. This field is optional.
+      placeholder: |
+        Possible cause:
+        Suggested fix:
+        Relevant source file or commit:
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: Add any other information that may help with diagnosing the issue.
+      placeholder: |
+        Related issues:
+        Relevant patches:
+        Additional context:
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thank you for contributing to Project Infinity X!
